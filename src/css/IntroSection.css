@@ -1,0 +1,65 @@
+.intro-container {
+  max-width: 35%;
+}
+
+.intro-title {
+  font-size: 3rem;
+}
+
+.intro-subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .intro-container {
+    max-width: 60%;
+  }
+  
+  .intro-title {
+    font-size: 2.5rem;
+    white-space: normal;
+    text-overflow: clip;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .intro-container {
+    max-width: 90%;
+    padding: 2rem 0 !important;
+  }
+  
+  .intro-title {
+    font-size: 2rem;
+    white-space: normal;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+  .intro-container {
+    max-width: 95%;
+  }
+  
+  .intro-title {
+    font-size: 1.75rem;
+  }
+  
+  .intro-subtitle {
+    font-size: 0.85rem;
+  }
+}
+
+/* Asegurar que el contenedor esté centrado */
+.intro-container {
+  margin-left: auto;
+  margin-right: auto;
+}

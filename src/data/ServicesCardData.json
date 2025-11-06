@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "title": "Consultoría estratégica",
+    "subtitle": "Para entrar, consolidarse y crecer en el ecosistema podcast",
+    "items": [
+      {
+        "title": "Optimización y distribución",
+        "description": "Aseguramos máxima visibilidad en plataformas de podcast y redes sociales."
+      },
+      {
+        "title": "Estrategia de contenido", 
+        "description": "Desarrollamos narrativas que conectan con tu audiencia objetivo."
+      },
+      {
+        "title": "Análisis de competencia",
+        "description": "Identificamos oportunidades en el mercado podcast."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Producción integral",
+    "subtitle": "Calidad de estudio profesional para tu proyecto",
+    "items": [
+      {
+        "title": "Grabación profesional",
+        "description": "Equipos de última generación para calidad de sonido premium."
+      },
+      {
+        "title": "Edición y postproducción",
+        "description": "Mezcla, mastering y efectos de sonido profesionales."
+      },
+      {
+        "title": "Formatos multiplataforma",
+        "description": "Adaptamos tu contenido para todas las plataformas."
+      }
+    ]
+  },
+  {
+    "id": 3, 
+    "title": "Marketing y crecimiento",
+    "subtitle": "Maximiza el alcance de tu podcast",
+    "items": [
+      {
+        "title": "Estrategia de lanzamiento",
+        "description": "Planificamos el debut para maximizar impacto inicial."
+      },
+      {
+        "title": "Monetización",
+        "description": "Desarrollamos estrategias de ingresos sostenibles."
+      },
+      {
+        "title": "Comunidad y engagement",
+        "description": "Construimos y mantenemos audiencias comprometidas."
+      }
+    ]
+  }
+]

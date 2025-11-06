@@ -3,80 +3,15 @@ import viteLogo from '/vite.svg'
 import { FaYoutube, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
+import IntroSection from './components/IntroSection'
+import ServicesSection from './components/ServicesSection'
 function App () {
   return (
     <div>
       <Header />
       <HeroSection />
-      <section className='d-flex align-items-center '>
-        <div className='container text-center py-5 w-50'>
-          <h2>De la estrategia al impacto</h2>
-          <p>En TheCastLab creemos que la calidad no se negocia. Cada proyecto es una colaboración estratégica, no una producción más.Diseñamos la excelencia en cada detalle, combinando visión creativa y precisión técnica.</p>
-          <p>Porque el verdadero impacto se construye con propósito.</p>
-        </div>
-      </section>
-      <section className='container d-flex justify-content-between'>
-        <div className='card m-2' style={{ width: '25rem' }}>
-          <div className='card-body'>
-            <h5 className='card-title'>Consultoría estratégica</h5>
-            <h6 className='card-subtitle mb-2 text-body-secondary'>Para entrar, consolidarse y
-              crecer en el ecosistema podcast
-            </h6>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-          </div>
-        </div>
-        <div className='card m-2' style={{ width: '25rem' }}>
-          <div className='card-body'>
-            <h5 className='card-title'>Consultoría estratégica</h5>
-            <h6 className='card-subtitle mb-2 text-body-secondary'>Para entrar, consolidarse y
-              crecer en el ecosistema podcast
-            </h6>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-          </div>
-        </div>
-        <div className='card m-2' style={{ width: '25rem' }}>
-          <div className='card-body'>
-            <h5 className='card-title'>Consultoría estratégica</h5>
-            <h6 className='card-subtitle mb-2 text-body-secondary'>Para entrar, consolidarse y
-              crecer en el ecosistema podcast
-            </h6>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-            <div>
-              <p className='card-text fw-semibold'>Optimización y distribución</p>
-              <p className='card-text'>Aseguramos máxima visibilidad en plataformas de podcast y redes sociales.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <IntroSection />
+      <ServicesSection />
       <section className='bg-black text-white'>
         <div className='container text-center w-50 py-5'>
           <h2 className=''>Casos que transforman reputación en resultados.</h2>
