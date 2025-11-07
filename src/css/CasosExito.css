@@ -1,0 +1,150 @@
+/* Mantén tus estilos intro existentes */
+.intro-container {
+  max-width: 35%;
+}
+
+.intro-title {
+  font-size: 3rem;
+}
+
+.intro-subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.card-title{
+  font-size: 2rem;
+}
+
+.card-subtitle{
+  font-size: 1rem;
+  color: #feb272 !important;
+}
+
+.card-text{
+  font-size: 1.3rem;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .intro-container {
+    max-width: 60%;
+  }
+  .intro-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .intro-container {
+    max-width: 90%;
+  }
+  .intro-title {
+    font-size: 2rem;
+  }
+  .intro-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- CARRUSEL MEJORADO ---------- */
+
+.casos-exito-section {
+  padding: 3rem 0;
+}
+
+/* CONTENEDOR PRINCIPAL DEL CARRUSEL */
+.casos-exito-carousel {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* CADA SLIDE INDIVIDUAL */
+.slide-item {
+  padding: 0 15px; /* Espaciado uniforme entre cards */
+  display: flex !important; /* Forzar display flex */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+/* ESTILOS PARA LAS CARDS EN EL CARRUSEL */
+.casos-exito-carousel .card {
+  width: 100% !important; /* Forzar ancho completo del contenedor */
+  max-width: 475px; /* Ancho máximo uniforme */
+  min-height: 640px; /* Altura mínima uniforme - AJUSTA SEGÚN NECESITES */
+  margin: 0 auto; /* Centrar la card */
+  display: flex;
+  flex-direction: column;
+}
+
+/* OVERRIDE DE SLICK PARA ELIMinar MÁRGENES EXAGERADOS */
+.casos-exito-carousel .slick-list {
+  margin: 0 -15px; /* Compensar el padding de los slides */
+  padding: 20px 0; /* Espacio vertical */
+}
+
+.casos-exito-carousel .slick-slide {
+  height: auto; /* Permitir que la altura se ajuste al contenido */
+}
+
+/* FLECHAS DE NAVEGACIÓN MEJORADAS */
+.casos-exito-carousel .slick-prev,
+.casos-exito-carousel .slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.casos-exito-carousel .slick-prev {
+  left: -20px;
+}
+
+.casos-exito-carousel .slick-next {
+  right: -20px;
+}
+
+.casos-exito-carousel .slick-prev:before,
+.casos-exito-carousel .slick-next:before {
+  color: white;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.casos-exito-carousel .slick-prev:hover,
+.casos-exito-carousel .slick-next:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* RESPONSIVE PARA TABLET */
+@media (max-width: 1024px) {
+  .casos-exito-carousel .card {
+    max-width: 320px; /* Un poco más pequeño en tablet */
+    min-height: 480px;
+  }
+  .slick-dots li button:before {
+  color: white !important;
+  font-size: 20px;
+  opacity: 0.8;
+}
+}
+
+/* RESPONSIVE PARA MÓVIL (grid normal) */
+@media (max-width: 767px) {
+  .casos-exito-section {
+    padding: 2rem 0;
+  }
+  
+  /* Asegurar que las cards en móvil también sean uniformes */
+  .col-12 .card {
+    max-width: 100%;
+    min-height: auto; /* En móvil, altura automática */
+    margin: 0 auto;
+  }
+}

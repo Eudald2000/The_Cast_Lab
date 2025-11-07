@@ -5,6 +5,7 @@ import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import IntroSection from './components/IntroSection'
 import ServicesSection from './components/ServicesSection'
+import CasosExito from './components/CasosExito'
 function App () {
   return (
     <div>
@@ -12,61 +13,7 @@ function App () {
       <HeroSection />
       <IntroSection />
       <ServicesSection />
-      <section className='bg-black text-white'>
-        <div className='container text-center w-50 py-5'>
-          <h2 className=''>Casos que transforman reputación en resultados.</h2>
-          <p>Tres ejemplos de marcas y creadores que han convertido su podcast
-            en una herramienta de posicionamiento, alianzas y monetización estable
-          </p>
-        </div>
-        <div className='d-flex justify-content-around pb-5'>
-          <div className='card m-2 bg-black text-white border' style={{ width: '26rem' }}>
-            <div className='card-body'>
-              <h5 className='card-title'>ROCA PROJECT</h5>
-              <h6 className='card-subtitle mb-2' style={{ color: '#feb272' }}>Un podcast audiovisual de conversaciones con propósito.</h6>
-              <div>
-                <p className='card-text fw-semibold'>Reto y soluciones</p>
-                <p className='card-text fs-6 fw-light'>Transformar una iniciativa independiente en un formato audiovisual de referencia en el mundo hispano. Diseñamos la estrategia de contenido, desarrollamos una identidad visual sólida y establecimos un flujo de producción profesional y escalable para múltiples plataformas.</p>
-              </div>
-              <div>
-                <p className='card-text fw-semibold'>Resultado</p>
-                <p className='card-text fs-6 fw-light'> <strong className='fw-bold'> Más de 900.000 suscriptores y más de 125 millones de reproducciones mensuales</strong> en YouTube, Spotify, Podimo, Instagram, Facebook y TikTok.</p>
-                <p className='card-text fs-6 fw-light'>Roca Project se ha consolidado como uno de los proyectos audiovisuales más influyentes de habla hispana, reconocido por su calidad, coherencia y alcance global.</p>
-              </div>
-            </div>
-          </div>
-          <div className='card m-2 bg-black text-white border' style={{ width: '26rem' }}>
-            <div className='card-body'>
-              <h5 className='card-title'>ROCA PROJECT</h5>
-              <h6 className='card-subtitle mb-2' style={{ color: '#feb272' }}>Un podcast audiovisual de conversaciones con propósito.</h6>
-              <div>
-                <p className='card-text fw-semibold'>Reto y soluciones</p>
-                <p className='card-text fs-6 fw-light'>Transformar una iniciativa independiente en un formato audiovisual de referencia en el mundo hispano. Diseñamos la estrategia de contenido, desarrollamos una identidad visual sólida y establecimos un flujo de producción profesional y escalable para múltiples plataformas.</p>
-              </div>
-              <div>
-                <p className='card-text fw-semibold'>Resultado</p>
-                <p className='card-text fs-6 fw-light'> <strong className='fw-bold'> Más de 900.000 suscriptores y más de 125 millones de reproducciones mensuales</strong> en YouTube, Spotify, Podimo, Instagram, Facebook y TikTok.</p>
-                <p className='card-text fs-6 fw-light'>Roca Project se ha consolidado como uno de los proyectos audiovisuales más influyentes de habla hispana, reconocido por su calidad, coherencia y alcance global.</p>
-              </div>
-            </div>
-          </div>
-          <div className='card m-2 bg-black text-white border' style={{ width: '26rem' }}>
-            <div className='card-body'>
-              <h5 className='card-title'>ROCA PROJECT</h5>
-              <h6 className='card-subtitle mb-2' style={{ color: '#feb272' }}>Un podcast audiovisual de conversaciones con propósito.</h6>
-              <div>
-                <p className='card-text fw-semibold'>Reto y soluciones</p>
-                <p className='card-text fs-6 fw-light'>Transformar una iniciativa independiente en un formato audiovisual de referencia en el mundo hispano. Diseñamos la estrategia de contenido, desarrollamos una identidad visual sólida y establecimos un flujo de producción profesional y escalable para múltiples plataformas.</p>
-              </div>
-              <div>
-                <p className='card-text fw-semibold'>Resultado</p>
-                <p className='card-text fs-6 fw-light'> <strong className='fw-bold'> Más de 900.000 suscriptores y más de 125 millones de reproducciones mensuales</strong> en YouTube, Spotify, Podimo, Instagram, Facebook y TikTok.</p>
-                <p className='card-text fs-6 fw-light'>Roca Project se ha consolidado como uno de los proyectos audiovisuales más influyentes de habla hispana, reconocido por su calidad, coherencia y alcance global.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CasosExito />
       <section>
         <div className='container w-50 text-center'>
           <h2>De la idea al impacto</h2>
