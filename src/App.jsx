@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection'
 import IntroSection from './components/IntroSection'
 import ServicesSection from './components/ServicesSection'
 import CasosExito from './components/CasosExito'
+import Ruta from './components/Ruta.jsx'
 function App () {
   return (
     <div>
@@ -14,65 +15,7 @@ function App () {
       <IntroSection />
       <ServicesSection />
       <CasosExito />
-      <section>
-        <div className='container w-50 text-center'>
-          <h2>De la idea al impacto</h2>
-          <p>Cada proyecto sigue un recorrido diseñado para transformar visión en resultados.Un proceso donde la estrategia y la creatividad avanzan juntas.</p>
-        </div>
-        <div className='d-flex justify-content-around'>
-          <div className='hover-container'>
-            <div className='hover-container-inner'>
-              <div className='hover-front'>
-                <h3>Descubrir</h3>
-              </div>
-              <div className='hover-back'>
-                <span className='hover-text'>Entendemos el objetivo, la audiencia y el contexto</span>
-              </div>
-            </div>
-          </div>
-          <div className='hover-container'>
-            <div className='hover-container-inner'>
-              <div className='hover-front'>
-                <h3>Planificar</h3>
-              </div>
-              <div className='hover-back'>
-                <span className='hover-text'>Ejecutamos con precision y claridad audiovisual.</span>
-              </div>
-            </div>
-          </div>
-          <div className='hover-container'>
-            <div className='hover-container-inner'>
-              <div className='hover-front'>
-                <h3>Diseñar</h3>
-              </div>
-              <div className='hover-back'>
-                <span className='hover-text'>Creamos el formato, la narrativa y la identidad visual.
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className='hover-container'>
-            <div className='hover-container-inner'>
-              <div className='hover-front'>
-                <h3>Lanzar</h3>
-              </div>
-              <div className='hover-back'>
-                <span className='hover-text'>Distribuimos estratégicamente en cada plataforma.</span>
-              </div>
-            </div>
-          </div>
-          <div className='hover-container'>
-            <div className='hover-container-inner'>
-              <div className='hover-front'>
-                <h3>Creceer</h3>
-              </div>
-              <div className='hover-back'>
-                <span className='hover-text'>Analizamos, optimizamos y escalamos el impacto.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Ruta />
       <section className='d-flex bg-black text-white p-5 justify-content-between noMargenInferior'>
         <div className='w-50'>
           <h3>Trabajamos con líderes, marcas y creadores que entienden que la excelencia es una inversión. </h3>

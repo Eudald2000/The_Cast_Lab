@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Descubrir",
+    "description": "Entendemos el objetivo, la audiencia y el contexto",
+    "icon": "🔍" 
+  },
+  {
+    "id": 2,
+    "title": "Planificar", 
+    "description": "Ejecutamos con precisión y claridad audiovisual",
+    "icon": "📋"
+  },
+  {
+    "id": 3,
+    "title": "Diseñar",
+    "description": "Creamos el formato, la narrativa y la identidad visual",
+    "icon": "🎨"
+  },
+  {
+    "id": 4,
+    "title": "Lanzar",
+    "description": "Distribuimos estratégicamente en cada plataforma", 
+    "icon": "🚀"
+  },
+  {
+    "id": 5,
+    "title": "Crecer",
+    "description": "Analizamos, optimizamos y escalamos el impacto",
+    "icon": "📈"
+  }
+]
