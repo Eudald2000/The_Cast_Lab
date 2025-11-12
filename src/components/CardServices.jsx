@@ -14,7 +14,6 @@ export default function CardServices ({ card }) {
           ))}
         </div>
 
-        {/* El botón se coloca al fondo */}
         <div className='mt-auto text-center'>
           <button className='btn-services rounded-pill'>
             Ver más servicios

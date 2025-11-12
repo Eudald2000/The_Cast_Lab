@@ -13,7 +13,7 @@ export default function Header () {
     <header className='container d-flex align-items-center justify-content-between p-5 position-relative'>
       <div className='container-logo'>
         <a className='navbar-brand' href='#'>
-          <img src={logo} alt='Bootstrap' className='w-75' />
+          <img src={logo} alt='TheCastLab_Logo' className='custom-logo' />
         </a>
       </div>
       <nav className='navbar navbar-expand-lg position-static'>

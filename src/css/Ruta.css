@@ -1,9 +1,7 @@
-/* Section general */
 .ruta-section {
   background-color: #fff;
 }
 
-/* Títulos responsivos */
 .ruta-title {
   font-size: 1.75rem;
   font-weight: 700;
@@ -18,7 +16,6 @@
   line-height: 1.5;
 }
 
-/* Contenedor de hover MEJORADO */
 .hover-container {
   position: relative;
   width: 100%;
@@ -124,12 +121,6 @@
     font-size: 0.95rem;
     padding: 1.2rem;
   }
-  
-  /* Grid personalizado para 5 columnas en desktop */
-  .col-lg-2-4 {
-    flex: 0 0 auto;
-    width: 20%;
-  }
 }
 
 /* ESCRITORIO GRANDE */
@@ -188,17 +179,5 @@
   .hover-back {
     font-size: 0.75rem;
     padding: 0.6rem;
-  }
-}
-
-/* Mejoras de accesibilidad - para touch devices */
-@media (hover: none) {
-  .hover-container:hover .hover-container-inner {
-    transform: none;
-  }
-  
-  /* Alternativa para touch: mostrar info siempre o con click */
-  .hover-container-inner {
-    transform: rotateY(180deg);
   }
 }

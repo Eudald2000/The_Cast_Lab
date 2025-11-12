@@ -7,7 +7,6 @@
   display: block;
 }
 
-/* Overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -15,16 +14,14 @@
   z-index: 1;
 }
 
-/* Contenido */
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 2rem 1rem; /* Añadido padding lateral para móviles */
+  padding: 2rem 1rem;
 }
 
-/* Títulos responsivos */
 .hero-title {
-  font-size: 1.75rem; /* Tamaño base para móviles */
+  font-size: 1.75rem; 
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -32,9 +29,8 @@
   overflow-wrap: break-word;
 }
 
-/* Párrafo responsivo */
 .hero-subtitle {
-  font-size: 0.5rem; /* Tamaño base para móviles */
+  font-size: 0.5rem; 
   line-height: 1.4;
   margin-bottom: 1.5rem;
   max-width: 90%;
@@ -42,7 +38,7 @@
   margin-right: auto;
 }
 
-/* Pantallas muy pequeñas (móviles pequeños) */
+/* móviles pequeños */
 @media (max-width: 375px) {
   .hero-title {
     font-size: 1.5rem;

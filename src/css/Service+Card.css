@@ -1,4 +1,4 @@
-/* Elimina width fijo y hazlo responsive */
+
 .card{
   border: solid 3px rgb(213, 213, 213) !important;
 }
@@ -8,7 +8,6 @@
   height: 100%;
 }
 
-/* Títulos responsivos */
 .card-title {
   font-size: 1.5rem;
   max-width: 80%;
@@ -42,7 +41,6 @@
   }
 }
 
-/* Botón responsive */
 .btn-services {
   border: 1px solid #5b5b5b;
   background-color: transparent;

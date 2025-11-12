@@ -10,17 +10,10 @@ html, body, #root {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Inter", sans-serif; 
 }
-p{
-  font-family: "Roboto", sans-serif;
+p, input, textarea, button{
+  font-family: "Roboto", sans-serif !important;
 }
 
 a{
   text-decoration: none !important;
-}
-
-/* responsivo: menor altura en pantallas pequeñas */
-@media (max-width: 576px) {
-  .hero {
-    height: 220px;
-  }
 }

@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 export default function CasosExito () {
-  // Configuración del carrusel MEJORADA
+  // Configuración del carrusel
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -14,9 +14,9 @@ export default function CasosExito () {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: false, // IMPORTANTE: desactivar centerMode
+    centerMode: false,
     focusOnSelect: false,
-    variableWidth: false, // IMPORTANTE: desactivar variableWidth
+    variableWidth: false,
     responsive: [
       {
         breakpoint: 1024, // Tablet
@@ -52,9 +52,9 @@ export default function CasosExito () {
         </p>
       </div>
 
-      {/* Versión móvil - Grid normal */}
+      {/* móvil */}
       <div className='d-block d-md-none'>
-        <div className='container'> {/* Añadir container para centrar */}
+        <div className='container'>
           <div className='row justify-content-center'>
             {cardsData.map((card) => (
               <div key={card.id} className='col-12 col-sm-10 col-md-8 mb-4'>
@@ -65,12 +65,12 @@ export default function CasosExito () {
         </div>
       </div>
 
-      {/* Versión tablet/desktop - Carrusel MEJORADO */}
+      {/* tablet/desktop */}
       <div className='d-none d-md-block'>
-        <div className='container-fluid'> {/* Añadir container para centrar */}
+        <div className='container-fluid'>
           <Slider {...sliderSettings} className='casos-exito-carousel'>
             {cardsData.map((card) => (
-              <div key={card.id} className='slide-item'> {/* Clase específica */}
+              <div key={card.id} className='slide-item'>
                 <ExitosCard card={card} />
               </div>
             ))}

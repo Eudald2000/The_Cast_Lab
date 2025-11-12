@@ -1,0 +1,103 @@
+/* TÍTULOS RESPONSIVOS */
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  padding-right: 1rem;
+}
+
+/* FORMULARIO MEJORADO */
+.contact-input {
+  background-color: #404040;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+  background-color: #404040;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.contact-input::placeholder {
+  color: rgb(177, 177, 177);
+}
+
+.submit-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ALTURA MÍNIMA PARA DESKTOP */
+@media (min-width: 992px) {
+  .min-height-lg {
+    min-height: 400px; /* Ajusta esta altura según necesites */
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+  
+  .contact-text {
+    padding-right: 2rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .contact-title {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  
+  .contact-text {
+    padding-right: 3rem;
+  }
+}
+
+/* DESKTOP GRANDE */
+@media (min-width: 1200px) {
+  .contact-title {
+    font-size: 2.25rem;
+    line-height: 1.4;
+  }
+}
+
+/* MÓVIL PEQUEÑO */
+@media (max-width: 576px) {
+  .contact-title {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  
+  .contact-input {
+    padding: 0.65rem 0.9rem;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+/* MÓVIL MUY PEQUEÑO */
+@media (max-width: 375px) {
+  .contact-title {
+    font-size: 1.2rem;
+  }
+}

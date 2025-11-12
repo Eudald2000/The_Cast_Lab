@@ -1,0 +1,5 @@
+.logo-blanco {
+  width: 200px;
+  height: auto;
+  filter: invert(1) brightness(2); /* Invierte los colores y luego aumenta el brillo */
+}
