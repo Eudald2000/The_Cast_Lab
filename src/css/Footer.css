@@ -1,5 +1,162 @@
+/* FOOTER GENERAL */
+.footer-section {
+  border-top: 1px solid #333;
+}
+
+/* LOGO - SIN ANIMACIONES */
 .logo-blanco {
   width: 200px;
   height: auto;
-  filter: invert(1) brightness(2); /* Invierte los colores y luego aumenta el brillo */
+  filter: invert(1) brightness(2);
+}
+
+.logo-blanco-mobile {
+  width: 150px;
+  height: auto;
+  filter: invert(1) brightness(2);
+}
+
+/* NAVEGACIÓN DESKTOP */
+.footer-nav {
+  position: relative;
+}
+
+.footer-nav-link {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.footer-nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.footer-nav-link:hover::after {
+  width: 100%;
+}
+
+/* NAVEGACIÓN MÓVIL - SIN BORDES, COMO DESKTOP */
+.footer-nav-mobile {
+  gap: 1rem !important;
+}
+
+.footer-nav-link-mobile {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.footer-nav-link-mobile::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.footer-nav-link-mobile:hover::after {
+  width: 100%;
+}
+
+/* ICONOS SOCIALES - SIN COLORES, ANIMACIÓN SIMPLE */
+.social-icon-link {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: white !important;
+}
+
+.social-icon-link:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo-blanco {
+    width: 180px;
+  }
+  
+  .footer-nav {
+    gap: 2rem !important;
+  }
+  
+  .footer-nav-link {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-section {
+    text-align: center;
+  }
+  
+  .footer-nav-mobile {
+    gap: 1.5rem !important;
+  }
+  
+  .footer-nav-link-mobile {
+    font-size: 0.85rem;
+  }
+  
+  .social-icon-link {
+    padding: 0.6rem;
+  }
+  
+  .social-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-blanco-mobile {
+    width: 120px;
+  }
+  
+  .footer-nav-mobile {
+    gap: 1rem !important;
+  }
+  
+  .footer-nav-link-mobile {
+    font-size: 0.8rem;
+  }
+  
+  .footer-social-mobile {
+    gap: 1.5rem !important;
+  }
+  
+  .social-icon-link {
+    padding: 0.5rem;
+  }
 }

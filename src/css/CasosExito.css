@@ -1,5 +1,15 @@
+/* ===== VARIABLES Y CONFIGURACIÓN GENERAL ===== */
+:root {
+  --primary-color: #feb272;
+  --text-white: #ffffff;
+  --bg-black: #000000;
+  --card-padding: 1.5rem;
+  --section-padding: 3rem;
+}
+
+/* ===== INTRO SECTION ===== */
 .intro-container {
-  max-width: 35%;
+  max-width: 40%;
 }
 
 .intro-title {
@@ -11,81 +21,85 @@
   font-weight: 300;
 }
 
-.card-title{
+/* ===== ESTILOS GENERALES DE CARDS ===== */
+.card-title {
   font-size: 2rem;
 }
 
-.card-subtitle{
+.card-subtitle {
   font-size: 1rem;
-  color: #feb272 !important;
+  color: var(--primary-color) !important;
 }
 
-.card-text{
+.card-text {
   font-size: 1.3rem;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .intro-container {
-    max-width: 60%;
-  }
-  .intro-title {
-    font-size: 2.5rem;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .intro-container {
-    max-width: 90%;
-  }
-  .intro-title {
-    font-size: 2rem;
-  }
-  .intro-subtitle {
-    font-size: 0.9rem;
-  }
-}
-
-/* ---------- CARRUSEL ---------- */
-
+/* ===== CARRUSEL CASOS DE ÉXITO ===== */
 .casos-exito-section {
-  padding: 3rem 0;
+  padding: var(--section-padding) 0;
 }
 
 .casos-exito-carousel {
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
-/* CADA SLIDE INDIVIDUAL */
-.slide-item {
-  padding: 0 15px;
-  display: flex !important; 
-  justify-content: center; 
-}
-
-/* ESTILOS PARA LAS CARDS EN EL CARRUSEL */
-.casos-exito-carousel .card {
-  width: 100% !important; 
-  max-width: 475px; 
-  min-height: 640px; 
-  margin: 0 auto; 
+/* ESTRUCTURA DEL CARRUSEL PARA ALTURAS UNIFORMES */
+.casos-exito-carousel .slick-track {
   display: flex;
-  flex-direction: column;
-}
-
-/* OVERRIDE DE SLICK PARA */
-.casos-exito-carousel .slick-list {
-  margin: 0 -15px; 
-  padding: 20px 0;
+  align-items: stretch;
 }
 
 .casos-exito-carousel .slick-slide {
   height: auto;
+  float: none;
 }
 
-/* FLECHAS DE NAVEGACIÓN  */
+.casos-exito-carousel .slick-slide > div {
+  height: 100%;
+}
+
+.slide-item {
+  padding: 0 15px;
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+}
+
+/* ESTILOS DE CARDS EN CARRUSEL */
+.casos-exito-carousel .card {
+  width: 100% !important;
+  max-width: 475px;
+  height: 100%;
+  min-height: 650px;
+  min-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.casos-exito-carousel .card-body {
+  padding: var(--card-padding);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+.casos-exito-carousel .card-body > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* OVERRIDE DE SLICK */
+.casos-exito-carousel .slick-list {
+  margin: 0 -15px;
+  padding: 20px 0;
+}
+
+/* NAVEGACIÓN DEL CARRUSEL */
 .casos-exito-carousel .slick-prev,
 .casos-exito-carousel .slick-next {
   z-index: 1;
@@ -93,6 +107,7 @@
   height: 40px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background 0.3s ease;
 }
 
 .casos-exito-carousel .slick-prev {
@@ -105,13 +120,7 @@
 
 .casos-exito-carousel .slick-prev:before,
 .casos-exito-carousel .slick-next:before {
-  color: white;
-  font-size: 20px;
-  opacity: 0.8;
-}
-
-.slick-dots li button:before {
-  color: white !important;
+  color: var(--text-white);
   font-size: 20px;
   opacity: 0.8;
 }
@@ -121,29 +130,185 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* RESPONSIVE PARA TABLET */
-@media (max-width: 1024px) {
-  .casos-exito-carousel .card {
-    max-width: 320px;
-    min-height: 480px;
-  }
-  .slick-dots li button:before {
-  color: white !important;
+.slick-dots li button:before {
+  color: var(--text-white) !important;
   font-size: 20px;
   opacity: 0.8;
 }
+
+/* ===== VISTA MÓVIL (NO CARRUSEL) ===== */
+.d-block.d-md-none .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-/* RESPONSIVE PARA MÓVIL */
-@media (max-width: 767px) {
-  .casos-exito-section {
-    padding: 2rem 0;
+.d-block.d-md-none .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.d-block.d-md-none .card-body > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== MEDIA QUERIES CONSOLIDADAS ===== */
+
+/* DESKTOP MEDIO (1200px - 1399px) */
+@media (max-width: 1399px) {
+  .intro-container { max-width: 45%; }
+  .intro-title { font-size: 2.8rem; }
+  .casos-exito-carousel { max-width: 85%; }
+  .casos-exito-carousel .card { 
+    max-width: 420px; 
+    min-height: 600px;
+    min-width: 320px;
   }
-  
-  
-  .col-12 .card {
-    max-width: 100%;
-    min-height: auto;
-    margin: 0 auto;
+}
+
+/* TABLET GRANDE (1024px - 1199px) */
+@media (max-width: 1199px) {
+  .intro-container { max-width: 55%; }
+  .intro-title { font-size: 2.6rem; }
+  .card-title { font-size: 1.8rem; }
+  .card-text { font-size: 1.2rem; }
+  .casos-exito-carousel { max-width: 90%; }
+  .casos-exito-carousel .card { 
+    max-width: 380px; 
+    min-height: 580px;
+    min-width: 300px;
+  }
+  .casos-exito-carousel .card-title { font-size: 1.3rem; }
+  .casos-exito-carousel .card-subtitle { font-size: 0.9rem; }
+}
+
+/* TABLET (768px - 1023px) */
+@media (max-width: 1023px) {
+  .intro-container { max-width: 70%; }
+  .intro-title { font-size: 2.3rem; }
+  .intro-subtitle { font-size: 1rem; }
+  .card-title { font-size: 1.7rem; }
+  .card-subtitle { font-size: 0.95rem; }
+  .card-text { font-size: 1.1rem; }
+  .casos-exito-carousel { max-width: 92%; }
+  .casos-exito-carousel .card { 
+    max-width: 350px; 
+    min-height: 550px;
+    min-width: 280px;
+  }
+  .casos-exito-carousel .card-body { padding: 1.25rem; }
+  .slick-dots li button:before { font-size: 16px; }
+}
+
+/* TABLET PEQUEÑA (600px - 767px) */
+@media (max-width: 767px) {
+  .intro-container { max-width: 85%; }
+  .intro-title { 
+    font-size: 2rem; 
+    line-height: 1.2;
+  }
+  .intro-subtitle { 
+    font-size: 0.95rem; 
+    line-height: 1.4;
+  }
+  .card-title { font-size: 1.6rem; }
+  .card-subtitle { font-size: 0.9rem; }
+  .card-text { font-size: 1rem; }
+  .casos-exito-section { padding: 2rem 0; }
+  .casos-exito-carousel { max-width: 95%; }
+  .casos-exito-carousel .card { 
+    max-width: 320px; 
+    min-height: 500px;
+    min-width: 260px;
+  }
+  .casos-exito-carousel .card-title { font-size: 1.2rem; }
+  .casos-exito-carousel .card-subtitle { font-size: 0.85rem; }
+  .casos-exito-carousel .card-text { 
+    font-size: 0.9rem; 
+    line-height: 1.4;
+  }
+  .slide-item { padding: 0 10px; }
+  .casos-exito-carousel .slick-list { 
+    margin: 0 -10px; 
+    padding: 15px 0;
+  }
+  .casos-exito-carousel .slick-prev { left: -15px; }
+  .casos-exito-carousel .slick-next { right: -15px; }
+  .slick-dots li button:before { font-size: 14px; }
+}
+
+/* MÓVIL GRANDE (480px - 599px) */
+@media (max-width: 599px) {
+  .intro-container { 
+    max-width: 92%; 
+    padding: 1.5rem 0 !important;
+  }
+  .intro-title { font-size: 1.8rem; }
+  .intro-subtitle { font-size: 0.9rem; }
+  .card-title { font-size: 1.5rem; }
+  .card-text { font-size: 0.95rem; }
+  .casos-exito-carousel { max-width: 98%; }
+  .casos-exito-carousel .card { 
+    max-width: 300px; 
+    min-height: 480px;
+    min-width: 240px;
+  }
+  .casos-exito-carousel .slick-prev,
+  .casos-exito-carousel .slick-next {
+    width: 35px;
+    height: 35px;
+  }
+  .casos-exito-carousel .slick-prev:before,
+  .casos-exito-carousel .slick-next:before {
+    font-size: 18px;
+  }
+}
+
+/* MÓVIL PEQUEÑO (360px - 479px) */
+@media (max-width: 479px) {
+  .intro-container { max-width: 95%; }
+  .intro-title { font-size: 1.6rem; }
+  .intro-subtitle { font-size: 0.85rem; }
+  .card-title { font-size: 1.4rem; }
+  .card-subtitle { font-size: 0.85rem; }
+  .card-text { font-size: 0.9rem; }
+  .casos-exito-carousel .card { 
+    max-width: 280px; 
+    min-height: 450px;
+    min-width: 220px;
+  }
+  .casos-exito-carousel .card-body { padding: 1rem; }
+  .casos-exito-carousel .card-text { font-size: 0.85rem; }
+  .slide-item { padding: 0 8px; }
+  .casos-exito-carousel .slick-list { 
+    margin: 0 -8px; 
+    padding: 10px 0;
+  }
+  .casos-exito-carousel .slick-prev { left: -10px; }
+  .casos-exito-carousel .slick-next { right: -10px; }
+}
+
+/* MÓVIL MUY PEQUEÑO (< 360px) */
+@media (max-width: 359px) {
+  .intro-title { font-size: 1.4rem; }
+  .intro-subtitle { font-size: 0.8rem; }
+  .card-title { font-size: 1.3rem; }
+  .card-text { font-size: 0.85rem; }
+  .casos-exito-carousel .card { 
+    max-width: 260px; 
+    min-height: 420px;
+    min-width: 200px;
+  }
+  .casos-exito-carousel .slick-prev,
+  .casos-exito-carousel .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+  .casos-exito-carousel .slick-prev:before,
+  .casos-exito-carousel .slick-next:before {
+    font-size: 16px;
   }
 }

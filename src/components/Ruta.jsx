@@ -16,12 +16,20 @@ export default function Ruta () {
           </div>
         </div>
 
-        <div className='row justify-content-center g-3 g-md-4 g-lg-5 mt-3 mt-md-4'>
-          {RutaData.map((card) => (
-            <div key={card.id} className='col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center'>
-              <RutaCard card={card} />
-            </div>
-          ))}
+        <div className='ruta-cards-container'>
+          {/* Línea horizontal para desktop */}
+          <div className='ruta-connecting-line horizontal d-none d-lg-block' />
+
+          {/* Línea vertical para móvil/tablet */}
+          <div className='ruta-connecting-line vertical d-lg-none' />
+
+          <div className='row justify-content-center g-3 g-md-4 g-lg-5 mt-3 mt-md-4'>
+            {RutaData.map((card, index) => (
+              <div key={card.id} className='col-12 col-sm-8 col-md-6 col-lg-2 d-flex justify-content-center position-relative'>
+                <RutaCard card={card} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

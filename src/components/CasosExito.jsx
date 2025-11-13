@@ -52,12 +52,11 @@ export default function CasosExito () {
         </p>
       </div>
 
-      {/* móvil */}
       <div className='d-block d-md-none'>
         <div className='container'>
           <div className='row justify-content-center'>
             {cardsData.map((card) => (
-              <div key={card.id} className='col-12 col-sm-10 col-md-8 mb-4'>
+              <div key={card.id} className='col-12 col-sm-10 col-md-8 mb-4 d-flex'>
                 <ExitosCard card={card} />
               </div>
             ))}
@@ -65,7 +64,6 @@ export default function CasosExito () {
         </div>
       </div>
 
-      {/* tablet/desktop */}
       <div className='d-none d-md-block'>
         <div className='container-fluid'>
           <Slider {...sliderSettings} className='casos-exito-carousel'>

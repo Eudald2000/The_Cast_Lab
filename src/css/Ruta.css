@@ -16,6 +16,36 @@
   line-height: 1.5;
 }
 
+.ruta-cards-container {
+  position: relative;
+}
+
+/* Línea conectadora HORIZONTAL (desktop) */
+.ruta-connecting-line.horizontal {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 80%;
+  height: 3px;
+  background: #333;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Línea conectadora VERTICAL (móvil/tablet) */
+.ruta-connecting-line.vertical {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: #333;
+  transform: translateX(-50%);
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
 .hover-container {
   position: relative;
   width: 100%;
@@ -24,6 +54,7 @@
   perspective: 1000px;
   cursor: pointer;
   margin: 0 auto;
+  z-index: 2; 
 }
 
 .hover-container-inner {
@@ -33,7 +64,8 @@
   text-align: center;
   transition: transform 0.6s ease;
   transform-style: preserve-3d;
-  border-radius: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .hover-container:hover .hover-container-inner {
@@ -50,7 +82,12 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 8px;
+}
+
+.hover-front {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
 }
 
 .hover-front h3 {
@@ -59,11 +96,12 @@
   margin: 0;
   text-align: center;
   line-height: 1.3;
+  color: #333;
 }
 
 .hover-back {
-  background: #eeeeee;
-  color: black;
+  background: #333;
+  color: white;
   transform: rotateY(180deg);
   font-size: 0.85rem;
   line-height: 1.4;
@@ -74,8 +112,25 @@
   font-weight: 400;
 }
 
+/* móvil/tablet */
+@media (max-width: 991px) {
+  .ruta-cards-container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ruta-cards-container .row > div {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  .ruta-cards-container .row > div:last-child {
+    margin-bottom: 0;
+  }
+}
+
 /* TABLET */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .ruta-title {
     font-size: 2.25rem;
   }
@@ -85,16 +140,16 @@
   }
   
   .hover-container {
-    max-width: 160px;
-    height: 160px;
+    max-width: 200px;
+    height: 200px;
   }
   
   .hover-front h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .hover-back {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -121,6 +176,10 @@
     font-size: 0.95rem;
     padding: 1.2rem;
   }
+  
+  .ruta-connecting-line.horizontal {
+    width: 75%;
+  }
 }
 
 /* ESCRITORIO GRANDE */
@@ -138,6 +197,10 @@
     font-size: 1rem;
     padding: 1.5rem;
   }
+  
+  .ruta-connecting-line.horizontal {
+    width: 70%;
+  }
 }
 
 /* MÓVIL PEQUEÑO */
@@ -151,8 +214,8 @@
   }
   
   .hover-container {
-    max-width: 140px;
-    height: 140px;
+    max-width: 160px;
+    height: 160px;
   }
   
   .hover-front h3 {
@@ -168,8 +231,8 @@
 /* MÓVIL MUY PEQUEÑO */
 @media (max-width: 375px) {
   .hover-container {
-    max-width: 130px;
-    height: 130px;
+    max-width: 140px;
+    height: 140px;
   }
   
   .hover-front h3 {

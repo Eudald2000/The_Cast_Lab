@@ -1,6 +1,6 @@
 export default function CardServices ({ card }) {
   return (
-    <div className='card h-100 service-card'>
+    <div className='card h-100 service-card py-5 px-3'>
       <div className='card-body d-flex flex-column'>
         <div>
           <h4 className='card-title'>{card.title}</h4>
